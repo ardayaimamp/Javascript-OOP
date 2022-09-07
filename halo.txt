@@ -1,0 +1,18 @@
+apa itu object oriented programming?
+ - object oriented programming adalah sudut pandang bahasa pemograman yang berkonsep "objek"
+ - ada banyak sudut pandang bahasa pemograman, namun OOP adalah yang sangat populer saat ini.
+ - ada beberapa istilah yang perlu dimengerti dalam OOP, yaitu : Object dan Class
+
+ apa itu object?
+  - object adalah data yang berisi field / properties / attribute dan method / function / behavior
+
+ apa itu class?
+  - class adalah blueprint, prototype atau cetakan untuk membuat object
+  - class berisikan deklarasi semua properties dan function yang dimiliki oleh Object
+  - setiap object slalu dibuat dari class
+  - dan sebuah class bisa membuat object tanpa batas
+
+  OOP di javacsript 
+  - javacsript sendiri sebenernya sejak awal dibuat sebagai bahasa prosedural, bukan bahasa pemograman berorientas object
+  - oleh karena, implementasi OOP di javacsript memang tidak sedatail bahasa pemograman lain yang memang dari awal merupakan 
+    bahasa pemograman OOP sepet Java atau C++
