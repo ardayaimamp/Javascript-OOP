@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>class Super constructor</title>
+</head>
+<body>
+  <script>
+
+    //turunan constructor pada employee menggunakan extend. super contructor
+
+    class Employee { //<== class Emplyee adalah parent dari class Manager
+
+      constructor(firstName){
+        this.firstName = firstName;
+
+      }
+
+      sayHello(name) {
+        console.log(`hello ${name}, my name is employee ${this.firstName}`);
+      }
+    }
+
+    class Manager extends Employee {
+
+      constructor(firstName, lastName){
+        super(firstName) // <== super hanya bole di lakukan di constructor || wajib memanggil super 
+        this.lastName = lastName;
+      }
+
+      sayHello(name) {
+        console.log(`hello ${name}, my name is manager ${this.firstName} ${this.lastName}`);
+      }
+    }
+
+    const budi = new Employee("budi");
+    budi.name = "budi"
+    budi.sayHello("joko");
+
+    const eko = new Manager("eko", "Khannedy");
+    eko.name = "eko"
+    eko.sayHello("joko");
+
+    console.log(budi);
+    console.log(eko);
+  </script>
+</body>
+</html>
