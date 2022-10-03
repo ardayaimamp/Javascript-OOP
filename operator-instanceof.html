@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>perator Instanceof</title>
+</head>
+<body>
+  <script>
+
+    //===========Operator Instanceof==============
+    // - kadang ada kasus kita ingin mengecek apakah sebuah object merupakan instance dari class tertentu atau bukan
+    // - kita tidak bisa menggunakan operator typeof, karena object dari class, jika kita gunakan operator typeof, hasilnya adalah "object"
+    // - Operator instaceof akan menghasilkan boolean, true jika benar object tersebut adalah instance objectnya, atau false jika bukan.
+
+
+    class Employee{
+
+    }
+
+    class Manager{
+
+
+    }
+
+    const budi = new Employee();
+    const eko = new Manager();
+
+    console.log(typeof budi);
+    console.log(typeof eko);
+
+
+
+    //<== pengecekan object pembuatan class nya . 
+    console.log(budi instanceof Employee); //true
+    console.log(budi instanceof Manager); //false
+    
+    
+    console.log(eko instanceof Employee); //false
+    console.log(eko instanceof Manager); //true
+
+
+    //======= Operator Instanceof di Inheritance ============== 
+
+    class Perusahaan{
+
+    } 
+
+    class Karyawan extends Perusahaan{
+
+
+    }
+
+    const nugraha = new Perusahaan();
+    const khannedy = new Karyawan();
+
+    console.log(typeof nugraha);
+    console.log(typeof khannedy);
+
+
+    console.log(nugraha instanceof Perusahaan); //true
+    console.log(nugraha instanceof Karyawan); //false
+    
+  
+    console.log(khannedy instanceof Perusahaan); //true <<== turunan dari class Perusahaan
+    console.log(khannedy instanceof Karyawan); //true
+
+  </script>
+</body>
+</html>
